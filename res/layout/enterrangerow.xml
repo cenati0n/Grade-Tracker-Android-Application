@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" 
+    android:weightSum="2">
+    <LinearLayout 
+        android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:gravity="center"
+        >
+    <TextView 
+        android:id="@+id/tvgrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+     /> 
+     </LinearLayout>
+     <LinearLayout 
+        android:layout_width="0dp"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:weightSum="3"
+         >
+         
+     <EditText 
+        android:id="@+id/etlow"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="L"
+        android:layout_weight="1"
+         android:inputType="number"
+        android:background="@drawable/dialogborder"
+     /> 
+     <TextView 
+        android:id="@+id/etlow1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="-"
+        android:layout_weight="1"
+     />   
+    <EditText 
+        android:id="@+id/etup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:hint="U"
+        android:inputType="number"
+        android:background="@drawable/dialogborder"
+     />   
+    
+     </LinearLayout>
+     
+     
+
+</LinearLayout>

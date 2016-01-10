@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_margin="12dp">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+        
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Roll No."
+            android:textColor="@color/textbody"
+            android:textSize="25sp"
+            android:background="@drawable/listtop"/>
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="Marks"
+            android:textColor="@color/textbody"
+            android:textSize="25sp"
+            android:background="@drawable/listtopright"/>
+        
+    </LinearLayout>
+    <ListView 
+        android:id="@+id/lventermarks"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:divider="@null"
+        android:dividerHeight="10.0sp"
+        android:descendantFocusability="beforeDescendants"
+        />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="0"
+        android:weightSum="3"
+        >
+        <RadioGroup 
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+			android:weightSum="3"
+            >
+            <RadioButton 
+            android:id="@+id/rbrel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Relative"
+            />
+        <RadioButton 
+            android:id="@+id/rbabso"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Absolute"
+            />
+        <RadioButton 
+            android:id="@+id/rbman"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Manual"
+            />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnclcgrade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textbody"
+        android:text="Calculate Grades"
+        android:textColor="@android:color/white"
+        android:textSize="25sp" />
+
+</LinearLayout>

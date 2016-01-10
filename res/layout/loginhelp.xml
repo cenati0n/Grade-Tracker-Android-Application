@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    <TextView
+        android:id="@+id/txtHelp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/textbody"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip"
+        android:gravity="center"
+        android:text="Help"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_below="@id/txtHelp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Username : Enter your username provided by the administration\n\nPassword : Enter your password provided by the administration. "
+        android:textSize="15dp"
+        android:layout_gravity="center"
+        android:gravity="center" 
+        android:id="@+id/tvHelpLogin" />
+    
+</RelativeLayout>
